@@ -14,6 +14,7 @@ if random_number == 1:
 
 print(f'Heitit kolikkoa ja sait: {result}n.')
 
+#--------------------------------------------------------------------------#
 
 suutari = input("Anna suutarin nimi: ")
 räätäli = input("Anna räätälin nimi: ")
