@@ -2,7 +2,7 @@
 class Auto:
 
     def __init__(self, rekkari, huippunopeus):
-        self.rekisteritunnus = rekkari
+        self.rekkari = rekkari
         self.huippunopeus = huippunopeus
         self.nopeus = 0
         self.kuljettu_matka = 0
@@ -24,7 +24,7 @@ def moikka():
 
 auto1 = Auto("ABC-123", 142)
 
-print(f"Auton rekisteritunnus: {auto1.rekisteritunnus}")
+print(f"Auton rekisteritunnus: {auto1.rekkari}")
 print(f"Huippunopeus: {auto1.huippunopeus}")
 print(f"Nopeus: {auto1.nopeus}")
 print(f"Kuljettu matka: {auto1.kuljettu_matka}")
