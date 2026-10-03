@@ -1,4 +1,34 @@
 
+reppu = []
+
+def lisaa_esine():
+    
+    esine = input("Syötä reppuun lisättävä esine: ")
+    if esine:
+        reppu.append(esine)
+        print(f"-{esine}- on lisätty reppuun!")
+    else:
+        print("Et syöttänyt mitään esinettä.")
+
+def nayta_reppu():
+
+    print("- Repussa olevat esineet -")
+    if not reppu:
+        print("Reppusi on tyhjä.")
+    else:
+        print(reppu)
+
+def fakta():
+
+    import random
+
+    fakta = ["Olet elossa...", "Joku on ovellasi...", "Näen sinut...", "Miksi näytät tuolta?",
+              "Lopeta tämän pelin pelaaminen.", "Sinun kannattaisi mennä ulos.", "Mitäpä tässä."]
+
+    faktat = random.choice(fakta)
+    print(faktat)
+
+
 player_name = input("Anna nimesi: ")
 player_age = input("Anna ikäsi: ")
 
@@ -17,15 +47,18 @@ else:
     peli_käynnissä = True
     while peli_käynnissä:
 
-        print("\nValitse jokin alla olevista komennoista:\nHauska fakta\nKuka olen?\nLopeta")
-        valinta = input("Anna komento: ")
+        print("\n--- Päävalikko ---\n 1 - Lisää reppuun esine\n 2 - Tarkastele repun sisältöä\n 3 - Kerron sinulle jotain hauskaa!\n 4 - Lopeta peli")
+        valinta = input("Valitse komento (1, 2, 3, 4): ")
 
-        if valinta == "Hauska fakta":
-            print("Olet elossa...")
+        if valinta == "1":
+            lisaa_esine()
 
-        if valinta == "Kuka olen?":
-            print(player_name)
+        if valinta == "2":
+            nayta_reppu()
         
-        if valinta == "Lopeta":
+        if valinta == "3":
+            fakta()
+
+        if valinta == "4":
             print("Peli sulkeutuu")
             peli_käynnissä = False
