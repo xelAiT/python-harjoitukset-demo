@@ -4,7 +4,11 @@ import random
 def roll_dice():
     return random.randint(1,6)
 
-heitot = 0
+while True:
 
-while heitot != 6:
-    print(roll_dice())
+    arpa = roll_dice()
+    print(arpa)
+
+    if arpa == 6:
+        break
+

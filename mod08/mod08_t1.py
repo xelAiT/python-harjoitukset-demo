@@ -1,5 +1,8 @@
 
-vuodenajat = ("kevät", "kesä", "syksy", "talvi")
+vuodenajat = ("talvi", "talvi", "kevät","kevät","kevät", "kesä", "kesä", "kesä", "syksy", "syksy", "syksy", "talvi")
+
 jarjestysnumero = int(input("Anna kuukauden järjestysnumero (1-12): "))
-viikonpaiva = viikonpaivat[jarjestysnumero - 1]
-print(f"{jarjestysnumero}. viikonpäivä on {viikonpaiva}.")
+
+kuukausi = vuodenajat[jarjestysnumero - 1]
+
+print(f"{jarjestysnumero}. kuukausi on {kuukausi}.")

@@ -1,9 +1,20 @@
 
-lista = []
+luvut = []
 
-luku = input("Anna luku tai lopeta painamalla enter: ")
-while luku != "":
-    lista.append(luku)
-    luku = input("Anna luku tai lopeta painamalla enter: ")
+while True:
+    luku = input("Anna luku: ")
 
-print(lista)
+    if luku == "":
+        break
+    luvut.append(luku)
+
+if luvut:
+    
+    luvut.sort(reverse=True)
+
+    viisi_suurinta = luvut[:5]
+
+    print("Viisi suurinta suurimmasta alkaen:")
+
+    for luku in viisi_suurinta:
+        print(luku)

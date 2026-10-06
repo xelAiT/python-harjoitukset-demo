@@ -1,9 +1,6 @@
 
-#Mod 3 ja 4 tehtävät tehty
 
-#Mod 5 tehtävät 3 ja 6 tekemättä
-
-#Mod 9 tehty
+#Mod 3 - 10 tehtävät tehty paitsi mod5 t6, mod6 t3, mod8 t3, mod10 t4,
 
 #Peliprojetki tehtävä 1 tehty
 
